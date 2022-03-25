@@ -3,9 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+import { CalculatorComponent } from './components/calculator/calculator.component';
+import { ResultComponent } from './components/result/result.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CalculatorComponent,
+    ResultComponent
   ],
   imports: [
     BrowserModule

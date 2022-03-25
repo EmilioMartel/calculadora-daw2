@@ -1,0 +1,32 @@
+<div class="calculator-container">
+    <app-result operation="{{operation}}" result="{{result}}"></app-result>
+    <table>
+        <tr>
+            <td id="clean" colspan="3" (click)="clean()">C</td>
+            <td class="operators" (click)="addNumber('/')">/</td>
+        </tr>
+        <tr>
+            <td class="numbers" (click)="addNumber('7')">7</td>
+            <td class="numbers" (click)="addNumber('8')" >8</td>
+            <td class="numbers" (click)="addNumber('9')">9</td>
+            <td class="operators" (click)="addNumber('*')">X</td>
+        </tr>
+        <tr>
+            <td class="numbers" (click)="addNumber('4')">4</td>
+            <td class="numbers" (click)="addNumber('5')">5</td>
+            <td class="numbers" (click)="addNumber('6')">6</td>
+            <td class="operators" (click)="addNumber('-')">-</td>
+        </tr>
+        <tr>
+            <td class="numbers" (click)="addNumber('1')">1</td>
+            <td class="numbers" (click)="addNumber('2')">2</td>
+            <td class="numbers" (click)="addNumber('3')">3</td>
+            <td class="operators" (click)="addNumber('+')">+</td>
+        </tr>
+        <tr>
+            <td class="numbers" colspan="2" (click)="addNumber('0')">0</td>
+            <td class="numbers" (click)="addNumber('.')">,</td>
+            <td class="operators" (click)="calculate()">=</td>
+        </tr>
+    </table>
+</div>
